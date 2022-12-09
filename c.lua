@@ -1,9 +1,4 @@
--- credits to zepsyy i just made it on T
-
-
-local u = game:GetService("UserInputService")
-u.InputBegan:Connect(function(input)
-if input.KeyCode == Enum.KeyCode.T then
+ 
 local function IsVisible(part)
     local vec, found=workspace.CurrentCamera:WorldToViewportPoint(part.Position)
     local onscreen = found and vec.Z > 0
@@ -22,7 +17,7 @@ end
 local Equipped = false
 
 -- Edit this --
-getgenv().spawnKey = Enum.KeyCode.F4
+getgenv().spawnKey = Enum.KeyCode.T
 ---------------
 
 -- Services
@@ -336,7 +331,7 @@ dupeCrucifix.Event:Connect(function(time, entityRoot)
     -- hl.OutlineColor = Color3.fromRGB(75, 177, 255)
     fakeCross.Anchored = true
 
-    CrucifixTool:Destroy()
+    -- CrucifixTool:Destroy()
 
     -- for i, v in pairs(fakeCross:GetChildren()) do
     --     if v.Name == "E" and v:IsA("BasePart") then
