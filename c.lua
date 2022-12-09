@@ -316,11 +316,12 @@ end
 dupeCrucifix.Event:Connect(function(time, entityRoot)
     local Cross = game:GetObjects("rbxassetid://11656343590")[1]
     Cross.Parent = workspace
-
+    local dbenuce = false
     local fakeCross = Cross.Handle
 
     -- fakeCross:FindFirstChild("EffectLight").Enabled = true
-
+    if dbenuce = false then
+    dbenuce = true
     ModuleScripts.MainGame.camShaker:ShakeOnce(35, 25, 0.15, 0.15)
     -- you tell me i didnt make?
     fakeCross.CFrame = CFrame.lookAt(CrucifixTool.Handle.Position, entityRoot.Position)
@@ -347,4 +348,5 @@ dupeCrucifix.Event:Connect(function(time, entityRoot)
     fakeCross.CanCollide = true
     task.wait(0.5)
     Cross:Remove()
+    dbenuce = false
 end)
