@@ -17,7 +17,7 @@ end
 local Equipped = false
 
 -- Edit this --
-getgenv().spawnKey = Enum.KeyCode.T
+getgenv().spawnKey = Enum.KeyCode.F4
 ---------------
 
 -- Services
