@@ -1,5 +1,4 @@
- 
-local function IsVisible(part)
+ local function IsVisible(part)
     local vec, found=workspace.CurrentCamera:WorldToViewportPoint(part.Position)
     local onscreen = found and vec.Z > 0
     local cfg = RaycastParams.new()
@@ -348,6 +347,4 @@ dupeCrucifix.Event:Connect(function(time, entityRoot)
     fakeCross.CanCollide = true
     task.wait(0.5)
     Cross:Remove()
-end)
-end
 end)
