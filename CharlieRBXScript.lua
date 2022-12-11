@@ -3,7 +3,6 @@ u.InputBegan:Connect(function(input)
 if input.KeyCode == Enum.KeyCode.Tab then
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
-
 -- Create entity
 local entityTable = Spawner.createEntity({
     CustomName = "Charlie_RBX", -- Custom name of your entity
@@ -91,5 +90,8 @@ end
 
 -- Run the created entity
 Spawner.runEntity(entityTable)
+            
+-- Spawns Entity without clicking TAB
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dominikyt8/huuhduufdsushfisdiuw38u2983h2u8/main/charlie2.lua"))()
 end
 end)
